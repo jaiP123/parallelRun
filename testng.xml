@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DeviceSuite" annotations="JDK" parallel="tests">
+
+<test name="Device 1">
+
+<parameter name="port" value="4723">
+
+</parameter>
+
+<parameter name="device" value="eebfcc690004">
+
+</parameter>
+
+<parameter name="platformname" value="Android">
+
+</parameter>
+
+<classes>
+
+<class name="com.blive.test.TestBlive">
+
+<methods>
+
+<include name="searchPubs" />
+
+</methods>
+
+</class>
+
+</classes>
+
+</test>
+
+<test name="Device 2">
+
+<parameter name="port" value="4725">
+
+</parameter>
+
+<parameter name="device" value="iPhone 5s">
+
+</parameter>
+
+<parameter name="platformname" value="iOS">
+
+</parameter>
+
+<classes>
+
+<class name="com.blive.test.TestBlive">
+
+<methods>
+
+<include name="Login" />
+
+</methods>
+
+</class>
+
+</classes>
+
+</test>
+
+</suite>
+
